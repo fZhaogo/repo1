@@ -1,80 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abfb8e31-cade-4cb4-ae92-1700897d5ed6" name="默认更改列表" comment="基本数据">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="abfb8e31-cade-4cb4-ae92-1700897d5ed6" name="默认更改列表" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chinasoft/utils/JedisPoolUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jedis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/datepng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/footerbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/footside.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/gz04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/headbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/img_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/img_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/img_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/lanmbq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/libg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/mainendbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/maintopbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/me.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/navbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/navbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/rtitbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/time.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/topbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/xifu.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/yuanshan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/zhifubao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/modernizr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/shang.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listpic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/newslistpic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/swtimg/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/swtimg/djzx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/swtimg/gtswt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/swtimg/gtswtbg11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/swtimg/swtanniu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/w1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/w2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/w3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/w5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/w6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chinasoft/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="125">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -129,7 +57,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/w3.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/w6.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/w2.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/newslistpic.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="141">
@@ -175,7 +123,35 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,12 +271,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583406009196</updated>
-      <workItem from="1583406012487" duration="925000" />
+      <workItem from="1583406012487" duration="1075000" />
     </task>
+    <task id="LOCAL-00001" summary="基本数据">
+      <created>1583407013081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583407013081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="925000" />
+    <option name="totallyTimeSpent" value="1075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="352" y="5" width="1073" height="696" extended-state="0" />
@@ -312,11 +296,11 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
       <window_info id="设计器" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39605913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39605913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32920355" />
       <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -433,10 +417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/about.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        <state relative-caret-position="141">
+          <caret line="174" column="16" lean-forward="true" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -450,10 +434,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/w3.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/w6.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/w2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/newslistpic.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="174" column="16" lean-forward="true" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
+        <state relative-caret-position="125">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
