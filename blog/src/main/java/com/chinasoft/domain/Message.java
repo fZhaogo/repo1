@@ -13,7 +13,7 @@ public class Message {
     private Integer id;
     private Integer host_id;
     private String content;
-    private String bloggername;
+    private String blogname;
     private Date date;
 
     public Message() {
@@ -43,12 +43,12 @@ public class Message {
         this.content = content;
     }
 
-    public String getBloggername() {
-        return bloggername;
+    public String getBlogname() {
+        return blogname;
     }
 
-    public void setBloggername(String bloggername) {
-        this.bloggername = bloggername;
+    public void setBloggername(String blogname) {
+        this.blogname = blogname;
     }
 
     public Date getDate() {
@@ -65,7 +65,7 @@ public class Message {
                 "id=" + id +
                 ", host_id=" + host_id +
                 ", content='" + content + '\'' +
-                ", bloggername='" + bloggername + '\'' +
+                ", bloggername='" + blogname + '\'' +
                 ", date=" + date +
                 '}';
     }

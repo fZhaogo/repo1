@@ -5,14 +5,15 @@
   Time: 22:16
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"  pageEncoding="UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>谈同个人博客♠★♠一个前端设计的热血青年</title>
+    <title>个人博客♠★♠一个前端设计的热血青年</title>
 
     <link href="css/base.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
@@ -25,170 +26,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 </head>
 <style>
-    #register,#login{
-        background:url(images/bg.jpg) repeat;
-        padding: 30px 50px;
-    }
-    #loginbtn,#registbtn{
-        background-color: rgb(107, 107, 107);
-        color: #FFF;
-        font-size: medium ;
-        font-family: "新宋体";
-        margin-left: 5px;
-        padding-top: 0px;
-        width: 50px;
-        border: none;
-        cursor: pointer;
-        height: 28px;
-        line-height: 28px;
-        border-radius: 5px;
-    }
     #searchform{
         margin-top: 2px;
     }
-    .msg{
-        color: red;
-        font-size: 20px;
-        line-height: 30px;
+    #p{
+        height:40px;width:40px;display:inline-block;
     }
 </style>
-<script type="text/javascript">
-
-    function refreshCode() {
-        $("#img").attr("src","/vcode?date="+new Date())
-    }
-    $(function () {
-        $("#commit").click(function () {
-           $.post("/loginServlet",{blogname:$("#blogname").val(),password:$("#password").val(),vcode:$("#vcode").val()},function (resp){
-                      if (resp.res==2){
-                          $("#tip").text("验证码错误");
-                      } else if(resp.res==1){
-                          $("#msg").text("用户名或密码错误");
-                      } else{
-                          location.href="/index.jsp";
-                      }
-               setTimeout("undo()",5000)
-           },"json")
-        })
-        
-    })
-    function undo() {
-        $("#msg").text("");
-        $("#tip").text("")
-    }
-    // function login() {
-    //     $("#myModal").css({"display":"block","padding-right":"16px"});
-    // }
-
-</script>
+<%
+    System.out.println(session.getAttribute("blogger"));
+%>
 <body>
-<!--登录的模态框-->
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form id="login" action="#" method="post">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel">登录页面</h4>
-                </div>
-                &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;
-                    <span id="msg"></span>
-
-
-                <div class="modal-body">
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon1">用&ensp;户&ensp;名</span>
-                        <input type="text" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" id="blogname" name="blogname">
-                    </div>
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon2">密&emsp;&emsp;码</span>
-                        <input type="password" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon2" id="password" name="password">
-                    </div>
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon3">验&ensp;证&ensp;码</span>
-                        <input type="text" class="form-control" placeholder="请输入验证码" aria-describedby="basic-addon3" id="vcode" name="vcode">
-                    </div>
-                    &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;
-                        <span id="tip"></span>
-                </div>
-                <a href="javascript:refreshCode()">
-                    <img src="/vcode" id="img" title="看不清楚刷新" style="margin-left: 100px"></a>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">返回</button>
-
-                    <button type="reset" class="btn btn-danger">重置</button>
-                    <button type="button" class="btn btn-primary" id="commit">登录</button>
-                </div>
-            </form>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-<!--注册的模态框-->
-<div id="myModar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLaber">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form id="register" action="#" method="post">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLaber">注册页面</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr0">昵&emsp;称</span>
-                        <input type="text" class="form-control" placeholder="请输入昵称" aria-describedby="basic-addonr0">
-                    </div>
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr1">姓&emsp;名</span>
-                        <input type="text" class="form-control" placeholder="请输入姓名" aria-describedby="basic-addonr1">
-                    </div>
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr2">密&emsp;码</span>
-                        <input type="text" class="form-control" placeholder="请输入密码" aria-describedby="basic-addonr2">
-                    </div>
-                    <p></p>
-
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr3">性&emsp;别</span>&emsp;&emsp;&emsp;
-                        <div class="form-control" aria-describedby="basic-addonr3" style="margin-top:-20px">
-                            <span >男</span>&ensp;
-                            <input type="radio" name="sex" >&emsp;&emsp;&emsp;
-                            <span >女</span>&ensp;
-                            <input type="radio" name="sex">
-                        </div>
-                    </div>
-
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr4">地&emsp;址</span>
-                        <input type="text" class="form-control" placeholder="请输入地址" aria-describedby="basic-addonr4">
-                    </div>
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr5">Q&ensp;&emsp;Q</span>
-                        <input type="text" class="form-control" placeholder="请输入地址" aria-describedby="basic-addonr5">
-                    </div>
-                    <p></p>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addonr6">邮&emsp;箱</span>
-                        <input type="text" class="form-control" placeholder="请输入地址" aria-describedby="basic-addonr6">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="reset" class="btn btn-danger" data-dismiss="modal">重置</button>
-                    <button type="submit" class="btn btn-primary">注册</button>
-                </div>
-            </form>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-
-<!--以上为模态框-->
-
-
 <div class="topnav">
     <!-- Button trigger modal -->
     <div class="row">
@@ -201,16 +49,15 @@
                 <input name="tbname" value="news" type="hidden">
                 <input name="Submit" class="input_submit" value="搜索" type="submit">
             </form>
-
         </div>
-        <div class="col-md-2">
-            <button id="loginbtn" type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
-                登录
-            </button>
-            <button id="registbtn" type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModar">
-                注册
-            </button>
-
+        <div class="col-md-3" id="photo">
+            <a id="set" href="#">
+            <img id="p" class="img-circle" src="${sessionScope.blogger.image}">
+            <span>${sessionScope.blogger.blogname}</span>
+            </a>
+            &emsp;
+            <a id="exit" href="/exitServlet"><span class="glyphicon glyphicon-log-out" ></span><span>&ensp;退出登录</span></a>&emsp;
+            <a id="write" href="/bloging.jsp?${blogger.blogname}"><span class="glyphicon glyphicon-pencil"></span><span>&ensp;写博客</span></a>
         </div>
     </div>
 
@@ -220,16 +67,16 @@
     <header>
         <div class="headtop"></div>
         <div class="contenttop">
-            <div class="logo f_l">谈同个人博客♠★♠一个前端设计的热血青年</div>
+            <div class="logo f_l">个人博客♠★♠一个前端设计的热血青年</div>
 
             <div class="blank"></div>
             <nav>
                 <div  class="navigation">
                     <ul class="menu">
-                        <li><a href="index.html">网站首页</a></li>
+                        <li><a href="index.jsp">网站首页</a></li>
                         <li><a href="#">关于我</a>
                             <ul>
-                                <li><a href="about.html">个人简介</a></li>
+                                <li><a href="about.jsp">个人简介</a></li>
                                 <li><a href="listpic.html">个人相册</a></li>
                             </ul>
                         </li>
@@ -258,9 +105,9 @@
         </div>
     </header>
     <div class="jztop"></div>
-    <div class="container">
-        <div class="bloglist f_l">
+    <div class="container" name="container" >
 
+        <div class="bloglist f_l">
 
             <!--@@@@第一篇文章开始@@@@-->
             <h3><a href="w1.html" target="_blank">【从前端菜鸟到大神】一片总结的很好的文章</a></h3>
@@ -466,4 +313,5 @@
 
 </body>
 </html>
+
 

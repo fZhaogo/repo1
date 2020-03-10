@@ -13,7 +13,7 @@ public class Comment {
     private Integer id;
     private String content;
     private String blog_id;
-    private String bloggername;
+    private String blogname;
     private Date date;
 
     public Comment() {
@@ -44,11 +44,11 @@ public class Comment {
     }
 
     public String getBloggername() {
-        return bloggername;
+        return blogname;
     }
 
-    public void setBloggername(String bloggername) {
-        this.bloggername = bloggername;
+    public void setBloggername(String blogname) {
+        this.blogname = blogname;
     }
 
     public Date getDate() {
@@ -65,7 +65,7 @@ public class Comment {
                 "id=" + id +
                 ", content='" + content + '\'' +
                 ", blog_id='" + blog_id + '\'' +
-                ", bloggername='" + bloggername + '\'' +
+                ", bloggername='" + blogname + '\'' +
                 ", date=" + date +
                 '}';
     }

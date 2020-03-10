@@ -12,7 +12,7 @@
 .about_content {
 	line-height: 24px;
 	font-size: 14px;
-	padding: 20px
+	padding: 20px;
 }
 .about_content p {
 	margin-bottom: 15px;
@@ -109,7 +109,7 @@
 .nextinfos {
 	text-align: center;
 }
-/* ¶¯Ì¬ */
+/* ¶¯?¬ */
 .news_list {
 	margin: 10px 0;
 	overflow: hidden
@@ -135,7 +135,7 @@
 	color: #f00;
 	text-decoration: underline
 }
-/* ·ÖÒ³ */
+/* ·??³ */
 .pagelist {
 	text-align: center;
 	color: #666;
@@ -228,7 +228,7 @@ a.readmore {
 .pingl.f_r {
 	padding: 0;
 }
-/* ÎÄ×ÖÍ¼Æ¬ÁÐ±í*/
+/* ?????¼?¬??±í*/
 .dtxw {
 	overflow: hidden;
 	margin: 30px auto
@@ -331,7 +331,7 @@ a.readmore {
 .dttext {
 	line-height: 24px
 }
-/* Í¼Æ¬Õ¹Ê¾ */
+/* ?¼?¬?¹?¾ */
 .lispic {
 	padding: 20px 0;
 	overflow: hidden;

@@ -11,4 +11,8 @@ import com.chinasoft.domain.Blogger;
  */
 public interface BloggerDao {
     Blogger findBloggerByNameAndPassword(Blogger blogger);
+
+    Blogger finByName(String blogname);
+
+    boolean insertBlogger(Blogger blogger);
 }

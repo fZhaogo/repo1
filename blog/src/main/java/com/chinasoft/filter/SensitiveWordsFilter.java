@@ -14,7 +14,7 @@ import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebFilter("/*")
+@WebFilter("")
 public class SensitiveWordsFilter implements Filter {
     //    用来装敏感词的集合
     private List<String> lists = new ArrayList<>();

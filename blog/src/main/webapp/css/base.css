@@ -52,7 +52,8 @@ a:hover {
 .topnav {
 	line-height: 50px;
 	height: 50px;
-	color: #000000;
+	color: #ffffff;
+	font-family: ÐÂËÎÌå;
 	text-align: left;
 	background-color: rgba(0, 0, 0, 0.88);
 	position: fixed;
@@ -62,10 +63,11 @@ a:hover {
 	box-shadow: #333 0px 2px 2px
 }
 .topnav a {
-	color: #000;
-	font-weight: bold;
-	margin: 0 5px
+	color: #ffffff;
+	margin: 0 5px;
+	text-decoration: none;
 }
+a£ºhover{text-decoration: none;color: red }
 #wrapper {
 	background: url(../images/footside.jpg) bottom center no-repeat;
 	overflow: hidden;

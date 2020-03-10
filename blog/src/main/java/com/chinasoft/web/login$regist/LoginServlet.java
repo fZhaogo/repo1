@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 @WebServlet("/loginServlet")
@@ -32,24 +33,30 @@ public class LoginServlet extends HttpServlet {
         HttpSession session = request.getSession();
 //        获取验证码
         ShearCaptcha captcha = (ShearCaptcha) session.getAttribute("captcha");
-        session.removeAttribute("captcha");
+        Map<String,Object> map=new HashMap<>();
 //        验证失败则从新登陆
         if (!captcha.verify(verifycode)){
-            response.getWriter().write("{res:0}");
+            map.put("res",0);
+            response.getWriter().write(JSON.toJSONString(map));
 
         }else {
 //        将获取到的参数封装为map集合
             Map<String, String[]> parameterMap = request.getParameterMap();
 //        map集合中的元素封装为对象的属性
             Blogger blogger = CommonUtils.populate(new Blogger(), parameterMap);
+            System.out.println(blogger);
             BloggerService bloggerService = new BloggerServiceImpl();
             Blogger bger = bloggerService.findBloggerByNameAndPassword(blogger);
+            System.out.println(bger);
             if (bger != null) {
 //            表示登录成功
-                session.setAttribute("blogger", blogger);
-                response.getWriter().write("{res:2}");
+                session.setAttribute("blogger", bger);
+                map.put("res",1);
+                map.put("blogger",bger);
+                response.getWriter().write(JSON.toJSONString(map));
             } else {
-                response.getWriter().write("{res:2}");
+                map.put("res",2);
+                response.getWriter().write(JSON.toJSONString(map));
             }
 
         }

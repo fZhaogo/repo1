@@ -41,12 +41,12 @@ public class Blogger {
         this.id = id;
     }
 
-    public String getBloggername() {
+    public String getBlogname() {
         return blogname;
     }
 
-    public void setBloggername(String bloggername) {
-        this.blogname = bloggername;
+    public void setBlogname(String blogname) {
+        this.blogname = blogname;
     }
 
     public String getImage() {
@@ -107,9 +107,9 @@ public class Blogger {
 
     @Override
     public String toString() {
-        return "BloggerDao{" +
+        return "Blogger{" +
                 "id=" + id +
-                ", bloggername='" + blogname + '\'' +
+                ", blogname='" + blogname + '\'' +
                 ", image='" + image + '\'' +
                 ", name='" + name + '\'' +
                 ", sex='" + sex + '\'' +
